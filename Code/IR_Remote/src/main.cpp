@@ -159,10 +159,7 @@ void loop()
       {
         break;
       }
-      delayMicroseconds(420 * 208);
-      if (digitalRead(continuousButtonPin6) == HIGH) 
-      {
-        irsend.sendRaw(rawDataConvert, 24, 38);
+      delayMindRaw(rawDataConvert, 24, 38);
         delay(32);
         irsend.sendRaw(rawDataConvert, 24, 38);
         break;
